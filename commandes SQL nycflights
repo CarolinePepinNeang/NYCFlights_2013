@@ -1,0 +1,44 @@
+SOURCE C:/Users/x/Documents/Projet simplon/NYC flights/schema.sql
+
+SOURCE C:/Users/x/Documents/Projet simplon/NYC flights/data.sql
+
+##############################
+#### Ajout des PRIMARY KEY ###
+##############################
+
+
+--------------------------------------
+-- Modification table Flights
+-- -----------------------------------
+ALTER TABLE Flights
+ADD COLUMN id_flights MEDIUMINT UNSIGNED AUTO_INCREMENT PRIMARY KEY ;
+
+-- ----------------------------
+-- Modification table Airlines
+-- ----------------------------
+ALTER TABLE Airlines
+ADD PRIMARY KEY(carrier);
+
+-- ----------------------------
+-- Modification table Planes
+-- ----------------------------
+ALTER TABLE Planes
+ADD PRIMARY KEY(tailnum);
+
+-- ----------------------------
+-- Modification table Airports
+-- ----------------------------
+ALTER TABLE Airports
+ADD PRIMARY KEY(faa);
+
+-- ----------------------------
+-- Modification table Weather
+-- ----------------------------
+-- Ajout d'une clé primaire composite constituée de 5 colonnes : origine, year, month, day et hour
+ALTER TABLE Weather
+ADD CONSTRAINT pk_Weather PRIMARY KEY(origin, year, month, day, hour);
+
+
+##############################
+#### Ajout des FOREIGN KEY ###
+##############################
