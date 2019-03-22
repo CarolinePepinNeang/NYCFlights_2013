@@ -18,9 +18,9 @@ Pour aider à comprendre ce qui cause des retards, ce package fournit les tables
 
 ## Packages à installer sur Rstudio
 
-install.packages("tidyverse")
-install.packages("ggplot2")
-library(nycflights13)
+- install.packages("tidyverse")
+- install.packages("ggplot2")
+- library(nycflights13)
 
 ## Plan du projet
 
@@ -45,7 +45,8 @@ library(nycflights13)
 
 
 ### Création de la BD SQL
-schema_without_constraints et data
+- schema_without_constraints
+- data
 
 ### Problématiques rencontrées sur les CSV
 - doublons
