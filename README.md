@@ -13,22 +13,22 @@ Pour aider à comprendre ce qui cause des retards, ce package fournit les tables
 - `airports`: noms et emplacements des aéroports
 - `airlines`: noms et codes IATA des compagnies aériennes (les codes AITA ou IATA des compagnies aériennes sont des codes à deux lettres, attribués par l'Association internationale du transport aérien.
 
-##Packages à installer sur Rstudio
+## Packages à installer sur Rstudio
 
 install.packages("tidyverse")
 install.packages("ggplot2")
 library(nycflights13)
 
-##Plan du projet
----------------
-###Télécharger les rda
+## Plan du projet
+
+### Télécharger les rda
         - flights.rda
         - airlines.rda
         - airports.rda
         - planes.rda
         - weather.rda
         
-###Convertir les fichiers au format csv
+### Convertir les fichiers au format csv
 
 - write_csv(flights, "flights.csv")
 
@@ -41,10 +41,10 @@ library(nycflights13)
 - write_csv(weather, "weather.csv")
 
 
-###Création de la BD SQL
+### Création de la BD SQL
 nycflights13-schema et nycflights13-data
 
-###Problématiques rencontrées sur les CSV
+### Problématiques rencontrées sur les CSV
 - doublons
 - NA
 - données incohérentes (ce qui posent des problèmes avec les clés primaires et étrangères)
