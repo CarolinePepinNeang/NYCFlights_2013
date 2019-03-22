@@ -1,4 +1,5 @@
-# NYCFlights_2013
+NYCFlights_2013
+=====================
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 R For Data Science
@@ -12,14 +13,14 @@ planes:  informations de construction de chaque avion
 airports: noms et emplacements des aéroports
 airlines: noms et codes IATA des compagnies aériennes (les codes AITA ou IATA des compagnies aériennes sont des codes à deux lettres, attribués par l'Association internationale du transport aérien.
 
-# Packages à installer sur Rstudio:
-
+Packages à installer sur Rstudio:
+-----------------------------------
 install.packages("tidyverse")
 install.packages("ggplot2")
 library(nycflights13)
 
-# Plan du projet
-
+Plan du projet
+---------------
 - Télécharger les rda :
         - flights.rda
         - airlines.rda
