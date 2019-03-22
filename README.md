@@ -4,7 +4,10 @@
 
 R For Data Science
 
-Ce package contient des informations sur tous les vols au départ de NYC (par exemple, EWR, JFK et LGA) en 2013: 336 776 vols au total. 
+A l'origine ce package provient de Rstudio.
+
+Ce package contient des informations sur tous les vols au départ de NYC (Il existe 3 aéroports à New York City : EWR, JFK et LGA).
+En 2013, 336 776 vols au total ont décollé depuis New York City. 
 Pour aider à comprendre ce qui cause des retards, ce package fournit les tables de données suivantes:
 
 - `flights`: tous les vols au départ de New-York (NYC) en 2013
@@ -42,7 +45,7 @@ library(nycflights13)
 
 
 ### Création de la BD SQL
-nycflights13-schema et nycflights13-data
+schema_without_constraints et data
 
 ### Problématiques rencontrées sur les CSV
 - doublons
